@@ -26,6 +26,7 @@ BuildRequires:	pkgconfig(libnm-util)
 BuildRequires:	pkgconfig(libnm-glib)
 BuildRequires:	pkgconfig(libnm-glib-vpn)
 BuildRequires:	pkgconfig(libpng)
+BuildRequires:	pkgconfig(libevent)
 BuildRequires:	ppp-devel
 Requires:	gtk+3
 Requires:	dbus
