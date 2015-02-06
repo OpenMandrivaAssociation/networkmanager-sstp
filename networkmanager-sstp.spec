@@ -10,7 +10,7 @@
 Summary:	NetworkManager integration for sstp
 Name:		networkmanager-sstp
 Version:	1.0.9
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		System/Base
 Url:		http://sourceforge.net/projects/%{oname}/
