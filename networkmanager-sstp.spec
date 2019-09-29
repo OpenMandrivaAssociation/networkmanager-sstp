@@ -63,7 +63,8 @@ This package contains the development files for %{name}.
 %apply_patches
 
 %build
-%configure2_5x \
+%autoreconf
+%configure \
 	--disable-static \
 	--enable-more-warnings=yes \
 	--with-gtkver=3 \
