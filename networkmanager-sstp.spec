@@ -63,7 +63,7 @@ This package contains the development files for %{name}.
 %apply_patches
 
 %build
-%autoreconf
+%autoreconf -vfi
 %configure \
 	--disable-static \
 	--enable-more-warnings=yes \
