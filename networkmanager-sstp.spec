@@ -24,8 +24,8 @@ BuildRequires:	pkgconfig(gnome-keyring-1)
 BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(libpng)
 BuildRequires:	pkgconfig(libevent)
-BuildRequires:  libnm-devel
-BuildRequires:  libnma-devel
+BuildRequires:  pkgconfig(libnm)
+BuildRequires:  pkgconfig(libnma)
 BuildRequires:	ppp-devel
 Requires:	gtk+3
 Requires:	dbus
