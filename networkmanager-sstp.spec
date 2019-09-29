@@ -14,7 +14,7 @@ Release:	1
 License:	GPLv2+
 Group:		System/Base
 Url:		https://github.com/enaess/network-manager-sstp/
-Source0:	https://github.com/enaess/network-manager-sstp/archive/release-%{version}.tar.gz
+Source0:	network-manager-sstp-release-%{version}.tar.gz
 
 BuildRequires:	gettext
 BuildRequires:	intltool
