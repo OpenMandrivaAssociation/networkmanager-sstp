@@ -9,12 +9,12 @@
 
 Summary:	NetworkManager integration for sstp
 Name:		networkmanager-sstp
-Version:	1.0.9
-Release:	2
+Version:	1.2.6
+Release:	1
 License:	GPLv2+
 Group:		System/Base
-Url:		http://sourceforge.net/projects/%{oname}/
-Source0:	http://downloads.sourceforge.net/project/%{oname}/%{oname}/%{version}/%{oname}-%{version}.tar.gz
+Url:		https://github.com/enaess/network-manager-sstp/
+Source0:	https://github.com/enaess/network-manager-sstp/archive/release-%{version}.tar.gz
 
 BuildRequires:	gettext
 BuildRequires:	intltool
@@ -22,11 +22,10 @@ BuildRequires:	pkgconfig(dbus-1)
 BuildRequires:	pkgconfig(gconf-2.0)
 BuildRequires:	pkgconfig(gnome-keyring-1)
 BuildRequires:	pkgconfig(gtk+-3.0)
-BuildRequires:	pkgconfig(libnm-util)
-BuildRequires:	pkgconfig(libnm-glib)
-BuildRequires:	pkgconfig(libnm-glib-vpn)
 BuildRequires:	pkgconfig(libpng)
 BuildRequires:	pkgconfig(libevent)
+BuildRequires:  libnm-devel
+BuildRequires:  libnma-devel
 BuildRequires:	ppp-devel
 Requires:	gtk+3
 Requires:	dbus
@@ -35,6 +34,7 @@ Requires:	shared-mime-info
 Requires:	GConf2
 Requires:	gnome-keyring
 Requires:	%{libname} = %{EVRD}
+Requires: NetworkManager-ppp
 Requires(post,postun): desktop-file-utils
 
 %description
@@ -59,7 +59,7 @@ Requires:	%{name} = %{EVRD}
 This package contains the development files for %{name}.
 
 %prep
-%setup -qn %{oname}-%{version}
+%setup -qn network-manager-sstp-release-%{version}
 %apply_patches
 
 %build
@@ -67,6 +67,7 @@ This package contains the development files for %{name}.
 	--disable-static \
 	--enable-more-warnings=yes \
 	--with-gtkver=3 \
+	--without-libnm-glib \
 	--with-tests=yes
 
 %make
