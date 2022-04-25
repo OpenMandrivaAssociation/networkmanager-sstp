@@ -9,12 +9,12 @@
 
 Summary:	NetworkManager integration for sstp
 Name:		networkmanager-sstp
-Version:	1.0.9
-Release:	2
+Version:	1.3.0
+Release:	1
 License:	GPLv2+
 Group:		System/Base
 Url:		http://sourceforge.net/projects/%{oname}/
-Source0:	http://downloads.sourceforge.net/project/%{oname}/%{oname}/%{version}/%{oname}-%{version}.tar.gz
+Source0:	https://download.gnome.org/sources/NetworkManager-sstp/%{url_ver}/NetworkManager-sstp-%{version}.tar.xz
 
 BuildRequires:	gettext
 BuildRequires:	intltool
