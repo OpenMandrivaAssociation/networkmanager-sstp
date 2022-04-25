@@ -1,6 +1,6 @@
 %define	url_ver %(echo %{version}|cut -d. -f1,2)
 %define _disable_ld_no_undefined 1
-%define	oname	sstp-client
+%define	oname	NetworkManager-sstp
 
 %define major	0
 %define libname %mklibname %{oname} %{major}
@@ -57,7 +57,7 @@ Requires:	%{name} = %{EVRD}
 This package contains the development files for %{name}.
 
 %prep
-%autosetup -p1
+%autosetup -n %{oname}-%{version} -p1
 
 %build
 %configure2_5x \
