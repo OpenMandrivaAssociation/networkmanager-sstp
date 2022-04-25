@@ -57,8 +57,7 @@ Requires:	%{name} = %{EVRD}
 This package contains the development files for %{name}.
 
 %prep
-%setup -qn %{oname}-%{version}
-%autopatch -p1
+%autosetup -p1
 
 %build
 %configure2_5x \
