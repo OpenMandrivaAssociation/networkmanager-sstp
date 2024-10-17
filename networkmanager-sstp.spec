@@ -13,7 +13,7 @@ Version:	1.0.9
 Release:	2
 License:	GPLv2+
 Group:		System/Base
-Url:		http://sourceforge.net/projects/%{oname}/
+Url:		https://sourceforge.net/projects/%{oname}/
 Source0:	http://downloads.sourceforge.net/project/%{oname}/%{oname}/%{version}/%{oname}-%{version}.tar.gz
 
 BuildRequires:	gettext
