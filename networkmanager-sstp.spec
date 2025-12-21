@@ -16,6 +16,11 @@ Group:		System/Base
 Url:		https://sourceforge.net/projects/%{oname}/
 Source0:	http://downloads.sourceforge.net/project/%{oname}/%{oname}/%{version}/%{oname}-%{version}.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	gettext
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(dbus-1)
